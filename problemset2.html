@@ -1,0 +1,144 @@
+<html>
+
+<head>
+<title>Welcome to the Maths game!</title>
+
+<script>
+
+            function calc()
+            {
+                var a = parseFloat(document.getElementById('a').value);
+                var b = parseFloat(document.getElementById('b').value);
+
+                var oper = document.getElementById('operator').value;
+
+                if(oper === '+')
+                {
+                    document.getElementById('c').value = a+b;
+                }
+
+                if(oper === '-')
+                {
+                    document.getElementById('c').value = a-b;
+                }
+
+                if(oper === '/')
+                {
+                    document.getElementById('c').value = a/b;
+                }
+
+                if(oper === 'X')
+                {
+                    document.getElementById('c').value = a*b;
+                }
+
+            }
+
+function question1() {
+    var value = document.getElementById("question1").value;
+    if (value == 8) {
+        window.alert("Congratulations! You are correct!");
+    } else {
+        window.alert("Try again!");
+    }
+}
+
+function question2() {
+    var value = document.getElementById("question2").value;
+    if (value == 10) {
+        window.alert("Congratulations! You are correct!");
+    } else {
+        window.alert("Try again!");
+    }
+}
+
+function question3() {
+    var value = document.getElementById("question3").value;
+    if (value == 0.2) {
+        window.alert("Congratulations! You are correct!");
+    } else {
+        window.alert("Try again!");
+    }
+}
+
+function question4() {
+    var value = document.getElementById("question4").value;
+    if (value == 1) {
+        window.alert("Congratulations! You are correct!");
+    } else {
+        window.alert("Try again!");
+    }
+}
+
+function question5() {
+    var value = document.getElementById("question5").value;
+    if (value == 30) {
+        window.alert("Congratulations! You are correct!");
+    } else {
+        window.alert("Try again!");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+    <h1> Welcome to the Online Maths Quiz!</h1>
+
+    <p>Make use of the calculator and give the correct answer!</p>
+
+    <input type="text" id="a"/><br/><br/>
+
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="X">X</option>
+    </select>
+
+         <input type="text" id="b"/><br/><br/>
+
+         <button onclick="calc();">=</button>
+         <input type="text" id="c"/>
+
+    <br></br>
+    <p>Try completing the following questions!</p>
+
+         <p id='q'>Question 1:∑10𝑖=0𝑖cos110−11100⌋−⌈∫2𝜋−2𝜋3710𝑑𝑥⌉1⌊ln(100coth𝜋5)√⌋−(sin2(𝑥)+cos2(𝑥)) = ? </p>
+         <br><input type="text" id="question1"/><br/><br/>
+
+         <button onclick="question1();"
+         >Check your answer</button>
+         <br></br>
+
+         <p id='q'>Question 2:The value of x + x(xx) when x = 2 is ? </p>
+         <br><input type="text" id="question2"/><br/><br/>
+
+         <button onclick="question2();"
+         >Check your answer</button>
+         <br></br>
+
+         <p id='q'>Question 3:If 102y = 25, then 10-y equals ? </p>
+         <br><input type="text" id="question3"/><br/><br/>
+
+         <button onclick="question3();"
+         >Check your answer</button>
+         <br></br>
+
+         <p id='q'>Question 4:(+7) + (-11) + (+5) = ? </p>
+         <br><input type="text" id="question4"/><br/><br/>
+
+         <button onclick="question4();"
+         >Check your answer</button>
+         <br></br>
+
+         <p id='q'>Question 5:(–5)(–2)(+3) = ? </p>
+         <br><input type="text" id="question5"/><br/><br/>
+
+         <button onclick="question5();"
+         >Check your answer</button>
+         <br></br>
+
+</body>
+</html>
